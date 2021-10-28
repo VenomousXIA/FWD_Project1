@@ -121,3 +121,16 @@ window.addEventListener(
 		passive: true,
 	}
 );
+
+/**
+ * Changes the default behaviour of jumping to the section
+ * when pressing the navigation menu item
+ * to scrolling to it smoothly until it is in view
+ *
+ * Default values of the scrollIntoView were used
+ */
+navMenu.addEventListener('click', (event) => {
+	event.preventDefault();
+	const section = document.querySelector(`#${event.target.innerHTML}`);
+	section.scrollIntoView({ behavior: 'smooth' });
+});

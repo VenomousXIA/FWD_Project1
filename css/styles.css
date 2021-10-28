@@ -10,11 +10,6 @@
 
 /* ---- Base Rules ---- */
 
-/*Setting the scrolling behaviour of the website to smooth*/
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	background: rgb(136, 203, 171);
 	background: linear-gradient(
